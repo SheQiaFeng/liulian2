@@ -33,15 +33,14 @@ import com.easemob.exceptions.EaseMobException;
 public class RegisterActivity extends BaseActivity {
 	private EditText userNameEditText;
 	private EditText passwordEditText;
-	private EditText confirmPwdEditText;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_register);
-		userNameEditText = (EditText) findViewById(R.id.username);
-		passwordEditText = (EditText) findViewById(R.id.password);
-		confirmPwdEditText = (EditText) findViewById(R.id.confirm_password);
+		userNameEditText = (EditText) findViewById(R.id.et_phone);
+		passwordEditText = (EditText) findViewById(R.id.et_pass);
 	}
 
 	/**
@@ -52,7 +51,6 @@ public class RegisterActivity extends BaseActivity {
 	public void register(View view) {
 		final String username = userNameEditText.getText().toString().trim();
 		final String pwd = passwordEditText.getText().toString().trim();
-		String confirm_pwd = confirmPwdEditText.getText().toString().trim();
 		if (TextUtils.isEmpty(username)) {
 			Toast.makeText(this, getResources().getString(R.string.User_name_cannot_be_empty), Toast.LENGTH_SHORT).show();
 			userNameEditText.requestFocus();
@@ -61,14 +59,8 @@ public class RegisterActivity extends BaseActivity {
 			Toast.makeText(this, getResources().getString(R.string.Password_cannot_be_empty), Toast.LENGTH_SHORT).show();
 			passwordEditText.requestFocus();
 			return;
-		} else if (TextUtils.isEmpty(confirm_pwd)) {
-			Toast.makeText(this, getResources().getString(R.string.Confirm_password_cannot_be_empty), Toast.LENGTH_SHORT).show();
-			confirmPwdEditText.requestFocus();
-			return;
-		} else if (!pwd.equals(confirm_pwd)) {
-			Toast.makeText(this, getResources().getString(R.string.Two_input_password), Toast.LENGTH_SHORT).show();
-			return;
 		}
+
 
 		if (!TextUtils.isEmpty(username) && !TextUtils.isEmpty(pwd)) {
 			final ProgressDialog pd = new ProgressDialog(this);
@@ -86,7 +78,7 @@ public class RegisterActivity extends BaseActivity {
 									pd.dismiss();
 								// 保存用户名
 								DemoApplication.getInstance().setUserName(username);
-								Toast.makeText(getApplicationContext(), getResources().getString(R.string.Registered_successfully), 0).show();
+								Toast.makeText(getApplicationContext(), getResources().getString(R.string.Registered_successfully), Toast.LENGTH_SHORT).show();
 								finish();
 							}
 						});

@@ -5,17 +5,10 @@
     android:background="#eff2f6"
     android:orientation="vertical" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1" >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerInParent="true"
-            android:src="@drawable/welcom_logo" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notloggedin_icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notloggedin_icon_1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notloggedin_icon_2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -95,32 +88,34 @@
             android:orientation="horizontal" >
 
             <Button
+                android:id="@+id/register"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dip"
                 android:layout_marginRight="10dip"
                 android:layout_weight="1"
-                android:background="@drawable/button_register_bg"
+                android:background="#fa7676"
                 android:gravity="center"
                 android:onClick="register"
                 android:paddingBottom="7dp"
                 android:paddingTop="7dp"
-                android:text="@string/register"
+                android:text="注册"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <Button
+                android:id="@+id/login"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dip"
                 android:layout_marginRight="10dip"
                 android:layout_weight="1"
-                android:background="@drawable/button_login_bg"
+                android:background="#fa7676"
                 android:gravity="center"
                 android:onClick="login"
                 android:paddingBottom="7dp"
                 android:paddingTop="7dp"
-                android:text="@string/login"
+                android:text="登录"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </LinearLayout>
