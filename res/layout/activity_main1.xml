@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/fragment_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <RelativeLayout
+            android:id="@id/layout_player_bts"
+            android:padding="10.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100.0dip"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@id/bt_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-6.0dip"
+                android:src="@drawable/music_float_next"
+                android:layout_toRightOf="@id/bt_play"
+                android:layout_centerVertical="true" />
+            <com.haomee.view.RoundProgressBar
+                android:id="@id/bt_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/music_float_play"
+                app:roundColor="#ffffffff"
+                app:roundProgressColor="#fffcc555"
+                app:roundWidth="3.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#ffd5d5d5"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip" />
+    <LinearLayout android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@id/layout_menus"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
