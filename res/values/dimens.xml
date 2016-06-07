@@ -17,4 +17,6 @@
     <dimen name="image_thumbnail_spacing">1dp</dimen>
     <dimen name="class1">18.0sp</dimen>
     <dimen name="class2">16.0sp</dimen>
+    <dimen name="class3">14.0sp</dimen>
+    <dimen name="class4">12.0sp</dimen>
 </resources>
