@@ -72,8 +72,8 @@ public class LoginActivity extends BaseActivity {
 		}
 		setContentView(R.layout.activity_login);
 
-		usernameEditText = (EditText) findViewById(R.id.username);
-		passwordEditText = (EditText) findViewById(R.id.password);
+		usernameEditText = (EditText) findViewById(R.id.et_phone);
+		passwordEditText = (EditText) findViewById(R.id.et_pass);
 
 		// 如果用户名改变，清空密码
 		usernameEditText.addTextChangedListener(new TextWatcher() {
@@ -159,7 +159,7 @@ public class LoginActivity extends BaseActivity {
 						public void run() {
 							pd.dismiss();
 							DemoHXSDKHelper.getInstance().logout(true,null);
-							Toast.makeText(getApplicationContext(), R.string.login_failure_failed, 1).show();
+							Toast.makeText(getApplicationContext(), R.string.login_failure_failed, Toast.LENGTH_SHORT).show();
 						}
 					});
 					return;
