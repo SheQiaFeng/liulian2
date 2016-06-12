@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_top" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+        <ImageView android:id="@id/item_bg" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/paintedeggshell_background" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/item_icon" android:layout_width="120.0dip" android:layout_height="150.0dip" android:layout_marginTop="69.0dip" android:src="@drawable/item_default" android:scaleType="fitXY" android:layout_alignTop="@id/item_bg" android:layout_centerHorizontal="true" />
+        <View android:id="@id/line_top" android:background="#ffdfdbd7" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginTop="15.0dip" android:layout_below="@id/item_icon" android:layout_alignLeft="@id/item_icon" android:layout_alignRight="@id/item_icon" />
+        <TextView android:textSize="@dimen/class2" android:textColor="@color/main_color" android:ellipsize="end" android:gravity="center" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="我的第一次登陆" android:singleLine="true" android:layout_below="@id/line_top" android:layout_alignLeft="@id/item_bg" android:layout_alignRight="@id/item_bg" />
+        <View android:id="@id/line_bottom" android:background="#ffdfdbd7" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginTop="5.0dip" android:layout_below="@id/item_name" android:layout_alignLeft="@id/item_icon" android:layout_alignRight="@id/item_icon" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/item_bg" android:layout_alignRight="@id/item_bg" android:layout_alignBottom="@id/item_bg">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onItemClick">
+                <ImageView android:id="@id/ImageView03" android:layout_width="@dimen/share_image_width_" android:layout_height="@dimen/share_image_height_" android:src="@drawable/share_wechat" android:scaleType="centerInside" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_weibo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onItemClick">
+                <ImageView android:id="@id/ImageView02" android:layout_width="@dimen/share_image_width_" android:layout_height="@dimen/share_image_height_" android:src="@drawable/share_weibo" android:scaleType="centerInside" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_friends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onItemClick">
+                <ImageView android:id="@id/ImageView01" android:layout_width="@dimen/share_image_width_" android:layout_height="@dimen/share_image_height_" android:src="@drawable/share_friends" android:scaleType="centerInside" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onItemClick">
+                <ImageView android:id="@id/img_fav" android:layout_width="@dimen/share_image_width_" android:layout_height="@dimen/share_image_height_" android:src="@drawable/share_qq" android:scaleType="centerInside" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_zone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onItemClick">
+                <ImageView android:layout_width="@dimen/share_image_width_" android:layout_height="@dimen/share_image_height_" android:src="@drawable/share_qq_zone" android:scaleType="centerInside" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_bottom" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

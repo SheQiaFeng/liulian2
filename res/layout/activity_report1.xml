@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/class1" android:textColor="@color/main_color" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="举报" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/report_iv_back" android:background="@null" android:paddingLeft="17.0dip" android:paddingTop="12.0dip" android:paddingRight="20.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/land_back" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/class2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="举报用户" />
+        <TextView android:textSize="@dimen/class1" android:textColor="@color/main_color" android:id="@id/report1_tv_titile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="澳洲原产UGG" />
+    </LinearLayout>
+    <RadioGroup android:orientation="vertical" android:id="@id/rg_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/rb_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:checked="true" android:text="举报20岁以上怪蜀桼 ,义不容辞" android:drawableLeft="@drawable/rb_report_layout" android:drawablePadding="10.0dip" style="@style/main_radiobutton_style" />
+        <RadioButton android:id="@id/rb_btn2" android:text="Ta是广告营销号或骗子" android:drawableLeft="@drawable/rb_report_layout" android:drawablePadding="10.0dip" style="@style/main_radiobutton_style" />
+        <RadioButton android:id="@id/rb_btn3" android:text="Ta骚扰我,T的言论让我不适." android:drawableLeft="@drawable/rb_report_layout" android:drawablePadding="10.0dip" style="@style/main_radiobutton_style" />
+        <RadioButton android:id="@id/rb_btn4" android:text=" Ta向我传播色情/违法信息" android:drawableLeft="@drawable/rb_report_layout" android:drawablePadding="10.0dip" style="@style/main_radiobutton_style" />
+    </RadioGroup>
+    <TextView android:textSize="@dimen/class3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:text="其他问题 :" />
+    <EditText android:textSize="@dimen/class3" android:textColor="#ff555555" android:textColorHint="#ffcccccc" android:gravity="top" android:layout_gravity="center_horizontal" android:id="@id/repotr1_content" android:background="@drawable/kuang" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="120.0dip" android:layout_marginTop="10.0dip" android:hint="请输入您要提交的其他问题" android:lines="6" android:ems="15" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rv_comit" android:background="@drawable/rb_report1_selector" android:clickable="true" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="@dimen/class1" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提交" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

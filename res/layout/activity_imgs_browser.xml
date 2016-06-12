@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.haomee.view.HackyViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bt_back" android:background="@null" android:padding="@dimen/top_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bt_back_white" />
+        <TextView android:textSize="@dimen/class1" android:textColor="#ffffffff" android:ellipsize="middle" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/bt_download" android:background="@null" android:padding="@dimen/top_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bt_download" />
+    </LinearLayout>
+</FrameLayout>

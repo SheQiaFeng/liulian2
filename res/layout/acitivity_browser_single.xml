@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relative_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bt_back" android:background="@null" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/land_back" />
+        <ImageView android:id="@id/item_tip" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/dot" android:layout_alignRight="@id/bt_back" />
+    </RelativeLayout>
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.haomee.chat.widget.photeview.PhotoView android:id="@id/iv_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/item_default" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

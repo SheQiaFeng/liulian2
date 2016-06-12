@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/class2" android:textColor="@color/share_text_color" android:id="@id/text_title" android:background="#ffffffff" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分享到" />
+    <HorizontalScrollView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_qq" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onItemClick">
+                <ImageView android:layout_width="@dimen/share_image_width" android:layout_height="@dimen/share_image_height" android:src="@drawable/share_qq" android:scaleType="centerInside" />
+                <TextView android:textSize="@dimen/share_font_size" android:textColor="@color/share_text_color" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_zone" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onItemClick">
+                <ImageView android:layout_width="@dimen/share_image_width" android:layout_height="@dimen/share_image_height" android:src="@drawable/share_qq_zone" android:scaleType="centerInside" />
+                <TextView android:textSize="@dimen/share_font_size" android:textColor="@color/share_text_color" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ空间" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_weibo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onItemClick">
+                <ImageView android:layout_width="@dimen/share_image_width" android:layout_height="@dimen/share_image_height" android:src="@drawable/share_weibo" android:scaleType="centerInside" />
+                <TextView android:textSize="@dimen/share_font_size" android:textColor="@color/share_text_color" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微博" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_weixin" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onItemClick">
+                <ImageView android:layout_width="@dimen/share_image_width" android:layout_height="@dimen/share_image_height" android:src="@drawable/share_wechat" android:scaleType="centerInside" />
+                <TextView android:textSize="@dimen/share_font_size" android:textColor="@color/share_text_color" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_friends" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onItemClick">
+                <ImageView android:layout_width="@dimen/share_image_width" android:layout_height="@dimen/share_image_height" android:src="@drawable/share_friends" android:scaleType="centerInside" />
+                <TextView android:textSize="@dimen/share_font_size" android:textColor="@color/share_text_color" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朋友圈" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/report_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_fav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onItemClick">
+            <ImageView android:id="@id/img_fav" android:layout_width="@dimen/share_image_width" android:layout_height="@dimen/share_image_height" android:src="@drawable/share_fav" android:scaleType="centerInside" />
+            <TextView android:textSize="@dimen/share_font_size" android:textColor="@color/share_text_color" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_to_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onItemClick">
+            <ImageView android:layout_width="@dimen/share_image_width" android:layout_height="@dimen/share_image_height" android:src="@drawable/share_report" android:scaleType="centerInside" />
+            <TextView android:textSize="@dimen/share_font_size" android:textColor="@color/share_text_color" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="举报" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="@dimen/class1" android:textColor="#ff454545" android:gravity="center" android:id="@id/share_cancel" android:background="#ffffffff" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="取消" android:onClick="onItemClick" />
+</LinearLayout>
