@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/list_item_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.daimajia.swipe.SwipeLayout android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/l_del_bt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="10.0">
+            <FrameLayout android:background="#ffc6c6cc" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/top" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="屏蔽用户" />
+            </FrameLayout>
+            <FrameLayout android:background="#fffd3e35" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/delete" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="删除用户" />
+            </FrameLayout>
+        </LinearLayout>
+        <RelativeLayout android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.haomee.view.CircleImageView android:id="@id/item_image" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/item_icon" app:border_width="2.0dip" app:border_color="@color/light" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_toLeftOf="@id/time" android:layout_toRightOf="@id/item_image" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/class2" android:textColor="@color/main_color" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="话题" android:singleLine="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/class4" android:textColor="#ffc0c0c0" android:ellipsize="end" android:id="@id/message_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:text="" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/class4" android:textColor="#ff505050" android:ellipsize="end" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:text="" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/class4" android:textColor="#ffc8c8c8" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="ssss" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/msg_state" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/msg_state_fail_resend" android:layout_alignLeft="@id/unread_msg_number" android:layout_alignBottom="@id/item_image" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/unread_msg_number" android:background="@drawable/red_circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" android:layout_alignTop="@id/item_image" android:layout_alignRight="@id/item_image" />
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginLeft="5.0dip" />
+</LinearLayout>
